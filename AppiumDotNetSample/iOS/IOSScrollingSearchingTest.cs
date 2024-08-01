@@ -20,7 +20,7 @@ namespace Appium.Samples.iOS
                 capabilities.SetCapability("username", Env.getEnvVar("SAUCE_USERNAME"));
                 capabilities.SetCapability("accessKey", Env.getEnvVar("SAUCE_ACCESS_KEY"));
                 capabilities.SetCapability("name", "ios - complex");
-                capabilities.SetCapability("tags", new string[] { "sample" });
+                capabilities.SetCapability("tags", new[]{ "sample" });
             }
             Uri serverUri = Env.isSauce() ? AppiumServers.sauceURI : AppiumServers.LocalServiceURIForIOS;
             driver = new IOSDriver<AppiumWebElement>(serverUri, capabilities, Env.INIT_TIMEOUT_SEC);
