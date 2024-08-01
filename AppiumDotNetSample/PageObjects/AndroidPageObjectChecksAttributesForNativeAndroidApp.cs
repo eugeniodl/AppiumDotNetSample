@@ -46,14 +46,8 @@ namespace Appium.Samples.PageObjects
         [FindsByAndroidUIAutomator(ClassName = "android.widget.TextView", Priority = 3)]
         private IMobileElement<AndroidElement> TestMultipleFindByElementProperty
         {
-            set
-            {
-                testMultipleFindByElementProperty = value;
-            }
-            get
-            {
-                return (IMobileElement<AndroidElement>) testMultipleFindByElementProperty;
-            }
+            set => testMultipleFindByElementProperty = value;
+            get => (IMobileElement<AndroidElement>)testMultipleFindByElementProperty;
         }
 
         [FindsByAndroidUIAutomator(AndroidUIAutomator = "new UiSelector().resourceId(\"android:id/fakeId\")", Priority = 1)]
@@ -61,14 +55,8 @@ namespace Appium.Samples.PageObjects
         [FindsByAndroidUIAutomator(ClassName = "android.widget.TextView", Priority = 3)]
         private IList<AndroidElement> MultipleFindByElementsProperty
         {
-            set
-            {
-                testMultipleFindByElementsProperty = value;
-            }
-            get
-            {
-                return (IList<AndroidElement>) testMultipleFindByElementsProperty;
-            }
+            set => testMultipleFindByElementsProperty = value;
+            get => (IList<AndroidElement>)testMultipleFindByElementsProperty;
         }
 
         [MobileFindsBySequence(Android = true)]
@@ -94,14 +82,8 @@ namespace Appium.Samples.PageObjects
         [FindsByAndroidUIAutomator(ClassName = "android.widget.TextView", Priority = 3)]
         private IMobileElement<AndroidElement> TestFoundByChainedSearchElementProperty
         {
-            set
-            {
-                foundByChainedSearchElementProperty = value;
-            }
-            get
-            {
-                return (IMobileElement<AndroidElement>) foundByChainedSearchElementProperty;
-            }
+            set => foundByChainedSearchElementProperty = value;
+            get => (IMobileElement<AndroidElement>)foundByChainedSearchElementProperty;
         }
 
         [MobileFindsBySequence(Android = true)]
@@ -110,14 +92,8 @@ namespace Appium.Samples.PageObjects
         [FindsByAndroidUIAutomator(ClassName = "android.widget.TextView", Priority = 3)]
         private IList<AndroidElement> TestFoundByChainedSearchElementsProperty
         {
-            set
-            {
-                foundByChainedSearchElementsProperty = value;
-            }
-            get
-            {
-                return (IList<AndroidElement>) foundByChainedSearchElementsProperty;
-            }
+            set => foundByChainedSearchElementsProperty = value;
+            get => (IList<AndroidElement>)foundByChainedSearchElementsProperty;
         }
 
         [MobileFindsByAll(Android = true)]
@@ -146,14 +122,8 @@ namespace Appium.Samples.PageObjects
         //The second selector will be commented till the problem is worked out
         private IMobileElement<AndroidElement> TestMatchedToAllLocatorsElementProperty
         {
-            set
-            {
-                matchedToAllLocatorsElementProperty = value;
-            }
-            get
-            {
-                return (IMobileElement<AndroidElement>) matchedToAllLocatorsElementProperty;
-            }
+            set => matchedToAllLocatorsElementProperty = value;
+            get => (IMobileElement<AndroidElement>)matchedToAllLocatorsElementProperty;
         }
 
         [MobileFindsByAll(Android = true)]
@@ -163,14 +133,8 @@ namespace Appium.Samples.PageObjects
         //The second selector will be commented till the problem is worked out
         private IList<AndroidElement> TestMatchedToAllLocatorsElementsProperty
         {
-            set
-            {
-                matchedToAllLocatorsElementsProperty = value;
-            }
-            get
-            {
-                return (IList<AndroidElement>) matchedToAllLocatorsElementsProperty;
-            }
+            set => matchedToAllLocatorsElementsProperty = value;
+            get => (IList<AndroidElement>)matchedToAllLocatorsElementsProperty;
         }
 
         //////////////////////////////////////////////////////////////////////////
