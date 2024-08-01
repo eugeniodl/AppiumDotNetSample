@@ -7,7 +7,7 @@ using System;
 
 namespace Appium.Samples.iOS
 {
-    [TestFixture()]
+    [TestFixture]
     class iOSLocationTest
     {
         private AppiumDriver<IOSElement> driver;
@@ -41,7 +41,7 @@ namespace Appium.Samples.iOS
             }
         }
 
-        [Test()]
+        [Test]
         public void SetLocationTest()
         {
             var l = new Location();

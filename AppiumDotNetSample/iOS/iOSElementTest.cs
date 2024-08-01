@@ -41,7 +41,7 @@ namespace Appium.Samples.iOS
             }
         }
 
-        [Test()]
+        [Test]
         public void FindByAccessibilityIdTest()
         {
             By byAccessibilityId = new ByAccessibilityId("ComputeSumButton");
@@ -49,7 +49,7 @@ namespace Appium.Samples.iOS
             Assert.GreaterOrEqual(driver.FindElementsByClassName("UIAWindow")[1].FindElements(byAccessibilityId).Count, 1);
         }
 
-        [Test()]
+        [Test]
         public void FindByByIosUIAutomationTest()
         {
             By byIosUIAutomation = new ByIosUIAutomation(".elements().withName(\"Answer\")");
@@ -57,7 +57,7 @@ namespace Appium.Samples.iOS
 			Assert.GreaterOrEqual(driver.FindElementsByClassName("UIAWindow")[1].FindElements(byIosUIAutomation).Count, 1);
         }
 
-        [Test()]
+        [Test]
         public void SetImmediateValueTest()
         {
             IOSElement slider = driver.FindElementByClassName("UIASlider");

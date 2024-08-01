@@ -36,7 +36,7 @@ namespace Appium.Samples.Android
             driver.StartActivity("io.appium.android.apis", ".ApiDemos");
         }
 
-        [Test()]
+        [Test]
         public void FindByAccessibilityIdTest()
         {
             By byAccessibilityId = new ByAccessibilityId("Graphics");
@@ -44,7 +44,7 @@ namespace Appium.Samples.Android
             Assert.GreaterOrEqual(driver.FindElementById("android:id/content").FindElements(byAccessibilityId).Count, 1);
         }
 
-        [Test()]
+        [Test]
         public void FindByAndroidUIAutomatorTest()
         {
             By byAndroidUIAutomator = new ByAndroidUIAutomator("new UiSelector().clickable(true)");

@@ -41,7 +41,7 @@ namespace Appium.Samples.Android
             }
         }
 
-        [Test()]
+        [Test]
         public void LockTest()
         {
             driver.Lock();

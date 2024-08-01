@@ -11,7 +11,7 @@ using System.Threading;
 
 namespace Appium.Samples.ServerTests
 {
-    [TestFixture()]
+    [TestFixture]
     public class AppiumLocalServerLaunchingTest
     {
         private string PathToCustomizedAppiumJS;

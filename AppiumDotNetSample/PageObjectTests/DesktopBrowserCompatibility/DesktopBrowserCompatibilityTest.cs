@@ -11,7 +11,7 @@ using System.Collections.Generic;
 
 namespace Appium.Samples.PageObjectTests.DesktopBrowserCompatibility
 {
-    [TestFixture()]
+    [TestFixture]
     public class DesktopBrowserCompatibilityTest
     {
         private IWebDriver driver;
@@ -59,7 +59,7 @@ namespace Appium.Samples.PageObjectTests.DesktopBrowserCompatibility
             }
         }
 
-        [Test()]
+        [Test]
         public void GoogleSearching()
         {
             searchTextField.SendKeys("Hello Appium!");

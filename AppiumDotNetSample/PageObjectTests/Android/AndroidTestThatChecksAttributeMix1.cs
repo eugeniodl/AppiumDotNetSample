@@ -11,7 +11,7 @@ using System;
 
 namespace Appium.Samples.PageObjectTests.Android
 {
-    [TestFixture()]
+    [TestFixture]
     public class AndroidTestThatChecksAttributeMix1
     {
         private AndroidDriver<AppiumWebElement> driver;
@@ -47,102 +47,102 @@ namespace Appium.Samples.PageObjectTests.Android
             driver.Quit();
         }
 
-        [Test()]
+        [Test]
         public void CheckMobileElement()
         {
             Assert.NotNull(pageObject.GetMobileElementText());
         }
 
-        [Test()]
+        [Test]
         public void CheckMobileElements()
         {
             Assert.GreaterOrEqual(pageObject.GetMobileElementSize(), 1);
         }
 
-        [Test()]
+        [Test]
         public void CheckMobileElementProperty()
         {
             Assert.NotNull(pageObject.GetMobileElementPropertyText());
         }
 
-        [Test()]
+        [Test]
         public void CheckMobileElementsProperty()
         {
             Assert.GreaterOrEqual(pageObject.GetMobileElementPropertySize(), 1);
         }
 
-        [Test()]
+        [Test]
         public void CheckElementFoundUsingMultipleLocators()
         {
             Assert.NotNull(pageObject.GetMultipleFindByElementText());
         }
 
-        [Test()]
+        [Test]
         public void CheckElementsFoundUsingMultipleLocators()
         {
             Assert.GreaterOrEqual(pageObject.GetMultipleFindByElementSize(), 10);
             Assert.LessOrEqual(pageObject.GetMultipleFindByElementSize(), 14);
         }
 
-        [Test()]
+        [Test]
         public void CheckElementFoundUsingMultipleLocatorsProperty()
         {
             Assert.NotNull(pageObject.GetMultipleFindByElementPropertyText());
         }
 
-        [Test()]
+        [Test]
         public void CheckElementsFoundUsingMultipleLocatorssProperty()
         {
             Assert.GreaterOrEqual(pageObject.GetMultipleFindByElementPropertySize(), 10);
             Assert.LessOrEqual(pageObject.GetMultipleFindByElementSize(), 14);
         }
 
-        [Test()]
+        [Test]
         public void CheckElementFoundByChainedSearch()
         {
             Assert.NotNull(pageObject.GetFoundByChainedSearchElementText());
         }
 
-        [Test()]
+        [Test]
         public void CheckElementsFoundByChainedSearch()
         {
             Assert.GreaterOrEqual(pageObject.GetFoundByChainedSearchElementSize(), 10);
             Assert.LessOrEqual(pageObject.GetMultipleFindByElementSize(), 14);
         }
 
-        [Test()]
+        [Test]
         public void CheckFoundByChainedSearchElementProperty()
         {
             Assert.NotNull(pageObject.GetFoundByChainedSearchElementPropertyText());
         }
 
-        [Test()]
+        [Test]
         public void CheckFoundByChainedSearchElementsProperty()
         {
             Assert.GreaterOrEqual(pageObject.GetFoundByChainedSearchElementPropertySize(), 10);
             Assert.LessOrEqual(pageObject.GetMultipleFindByElementSize(), 14);
         }
 
-        [Test()]
+        [Test]
         public void CheckElementMatchedToAll()
         {
             Assert.NotNull(pageObject.GetMatchedToAllLocatorsElementText());
         }
 
-        [Test()]
+        [Test]
         public void CheckElementsMatchedToAll()
         {
             Assert.GreaterOrEqual(pageObject.GetMatchedToAllLocatorsElementSize(), 1);
             Assert.LessOrEqual(pageObject.GetMatchedToAllLocatorsElementSize(), 13);
         }
 
-        [Test()]
+        [Test]
         public void CheckElementMatchedToAllProperty()
         {
             Assert.NotNull(pageObject.GetMatchedToAllLocatorsElementPropertyText());
         }
 
-        [Test()]
+        [Test]
         public void CheckElementMatchedToAllElementsProperty()
         {
             Assert.GreaterOrEqual(pageObject.GetMatchedToAllLocatorsElementPropertySize(), 1);

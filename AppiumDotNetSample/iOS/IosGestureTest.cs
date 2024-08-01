@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace Appium.Samples.iOS
 {
-    [TestFixture()]
+    [TestFixture]
     class iOSGestureTest
     {
         private AppiumDriver<IOSElement> driver;
@@ -42,7 +42,7 @@ namespace Appium.Samples.iOS
             }
         }
 
-		[Test()]
+		[Test]
 		public void TapTest()
 		{
 
@@ -55,21 +55,21 @@ namespace Appium.Samples.iOS
 			Assert.AreEqual (driver.FindElementByXPath ("//*[@name = \"Answer\"]").Text, str);
 		}
 
-		[Test()]
+		[Test]
 		public void ZoomTest()
 		{
 			IOSElement e = driver.FindElementById ("IntegerA");
 			driver.Zoom(e);
 		}
 
-        [Test()]
+        [Test]
         public void PinchTest()
         {
 			IOSElement e = driver.FindElementById ("IntegerA");
             driver.Pinch(e);
         }
 
-		[Test()]
+		[Test]
 		public void SwipeTest()
 		{
 			IOSElement slider = driver.FindElementByClassName ("UIASlider");

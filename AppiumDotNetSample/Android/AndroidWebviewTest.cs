@@ -10,7 +10,7 @@ using System.Threading;
 
 namespace Appium.Samples.Android
 {
-	[TestFixture ()]
+	[TestFixture]
 	public class AndroidWebviewTest
 	{
 		private IWebDriver driver;
@@ -45,7 +45,7 @@ namespace Appium.Samples.Android
             }
         }
 
-		[Test ()]
+		[Test]
 		public void WebViewTestCase ()
 		{
             Thread.Sleep(5000);

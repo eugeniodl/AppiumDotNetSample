@@ -40,7 +40,7 @@ namespace Appium.Samples.iOS
             }
         }
 
-        [Test()]
+        [Test]
         public void ScrollToTestCase()
         {
             AppiumWebElement slider = driver
@@ -49,7 +49,7 @@ namespace Appium.Samples.iOS
             Assert.AreEqual(slider.GetAttribute("name"), "Sliders");
         }
 
-        [Test()]
+        [Test]
         public void ScrollToExactTestCase()
         {
             AppiumWebElement table = driver.FindElement(new ByIosUIAutomation(".tableViews()[0]"));

@@ -43,7 +43,7 @@ namespace Appium.Samples.Android
             }
         }
 
-        [Test()]
+        [Test]
         public void HideKeyBoardTestCase()
         {
             driver.StartActivity("io.appium.android.apis", ".app.CustomTitle");

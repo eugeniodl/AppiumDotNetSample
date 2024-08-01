@@ -8,7 +8,7 @@ using OpenQA.Selenium.Appium.Android;
 
 namespace Appium.Samples.Android
 {
-	[TestFixture ()]
+	[TestFixture]
 	public class AndroidSearchingTest
 	{
 		private AndroidDriver<AndroidElement> driver;
@@ -47,7 +47,7 @@ namespace Appium.Samples.Android
             }
         }
 
-        [Test()]
+        [Test]
         public void FindByAccessibilityIdTest()
         {
             By byAccessibilityId = new ByAccessibilityId("Graphics");

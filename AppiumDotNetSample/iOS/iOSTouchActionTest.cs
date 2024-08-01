@@ -10,7 +10,7 @@ using OpenQA.Selenium.Appium.iOS;
 
 namespace Appium.Sampless.iOS
 {
-    [TestFixture()]
+    [TestFixture]
     public class iOSTouchActionTest
     {
         private AppiumDriver<IWebElement> driver;
@@ -44,7 +44,7 @@ namespace Appium.Sampless.iOS
             }
         }
 
-        [Test()]
+        [Test]
         public void SimpleActionTestCase()
         {
 			driver.FindElementById ("TextField1").Clear();
@@ -59,7 +59,7 @@ namespace Appium.Sampless.iOS
 			Assert.AreEqual (driver.FindElementByXPath ("//*[@name = \"Answer\"]").Text, str);
         }
 
-        [Test()]
+        [Test]
         public void MultiActionTestCase()
         {
 			driver.FindElementById ("TextField1").Clear();

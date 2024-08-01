@@ -48,7 +48,7 @@ namespace Appium.Samples.PageObjectTests.Android
             driver.Quit();
         }
 
-        [Test()]
+        [Test]
         public void WebViewTestCase()
         {
             Thread.Sleep(5000);

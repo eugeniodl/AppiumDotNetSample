@@ -8,7 +8,7 @@ using System;
 
 namespace Appium.Samples.Android
 {
-    [TestFixture()]
+    [TestFixture]
     class AndroidConnectionTest
     {
         private AppiumDriver<IWebElement> driver;
