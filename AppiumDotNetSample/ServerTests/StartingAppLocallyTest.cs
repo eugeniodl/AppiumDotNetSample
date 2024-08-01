@@ -163,7 +163,7 @@ namespace Appium.Samples.ServerTests
                 {
 					driver = new IOSDriver<AppiumWebElement>(service, capabilities);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     Assert.IsTrue(!service.IsRunning);
                     return;
