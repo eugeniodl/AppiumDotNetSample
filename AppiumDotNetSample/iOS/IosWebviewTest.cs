@@ -9,7 +9,7 @@ using OpenQA.Selenium.Appium.iOS;
 
 namespace Appium.Samples.iOS
 {
-	[TestFixture ()]
+	[TestFixture]
 	public class iOSWebviewTest
 	{
 		private AppiumDriver<IWebElement> driver;
@@ -40,7 +40,7 @@ namespace Appium.Samples.iOS
             }
         }
 
-		[Test ()]
+		[Test]
 		public void GetPageTestCase ()
 		{
 			driver.FindElementByXPath("//UIATextField[@value='Enter URL']")

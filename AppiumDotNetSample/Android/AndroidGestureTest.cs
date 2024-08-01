@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace Appium.Samples.Android
 {
-    [TestFixture()]
+    [TestFixture]
     class AndroidGestureTest
     {
         private AndroidDriver<AndroidElement> driver;
@@ -62,7 +62,7 @@ namespace Appium.Samples.Android
             }
         }
 
-        [Test()]
+        [Test]
         public void SwipeTest()
         {
             driver.StartActivity("io.appium.android.apis",".graphics.FingerPaint");
@@ -88,7 +88,7 @@ namespace Appium.Samples.Android
             );
         }
 
-        [Test()]
+        [Test]
         public void PincTest()
         {
             driver.StartActivity("io.appium.android.apis", ".graphics.TouchRotateActivity");
@@ -96,7 +96,7 @@ namespace Appium.Samples.Android
             driver.Pinch(element);
         }
 
-        [Test()]
+        [Test]
         public void ZoomTest()
         {
             driver.StartActivity("io.appium.android.apis", ".graphics.TouchRotateActivity");

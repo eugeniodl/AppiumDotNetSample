@@ -7,7 +7,7 @@ using System;
 
 namespace Appium.Samples.Android
 {
-    [TestFixture()]
+    [TestFixture]
     class AndroidOrientationTest
     {
         private IWebDriver driver;

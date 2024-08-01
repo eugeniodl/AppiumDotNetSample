@@ -42,7 +42,7 @@ namespace Appium.Samples.Android
             }
         }
 
-        [Test()]
+        [Test]
         public void DeviceTimeTest()
         {
             string time = driver.DeviceTime;

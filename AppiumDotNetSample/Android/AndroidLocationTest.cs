@@ -7,7 +7,7 @@ using System;
 
 namespace Appium.Samples.Android
 {
-    [TestFixture()]
+    [TestFixture]
     class AndroidLocationTest
     {
         private AppiumDriver<AndroidElement> driver;
@@ -43,7 +43,7 @@ namespace Appium.Samples.Android
             }
         }
 
-        [Test()]
+        [Test]
         public void setLocationTest()
         {
             var l = new Location();

@@ -67,7 +67,7 @@ namespace Appium.Samples.PageObjectTests.TimeOutManagement
 
 
 
-        [Test()]
+        [Test]
         public void CheckAbilityToChangeWaitingTime()
         {
             Assert.AreEqual(true, IsInTime(new TimeSpan(0, 0, 5), stubElements));
@@ -79,7 +79,7 @@ namespace Appium.Samples.PageObjectTests.TimeOutManagement
             Assert.AreEqual(true, IsInTime(newTime, stubElements));
         }
 
-        [Test()]
+        [Test]
         public void CheckWaitingTimeIfMemberHasAttribute_WithTimeSpan()
         {
             TimeSpan fifteenSeconds = new TimeSpan(0, 0, 0, 15, 0); ;

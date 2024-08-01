@@ -10,7 +10,7 @@ using System.Threading;
 
 namespace Appium.Samples.Android
 {
-	[TestFixture ()]
+	[TestFixture]
 	public class AndroidTouchActionTest
 	{
 		private AndroidDriver<AppiumWebElement> driver;
@@ -62,7 +62,7 @@ namespace Appium.Samples.Android
             }
 		}
 
-        [Test()]
+        [Test]
         public void SimpleTouchActionTestCase()
         {
             IList<AppiumWebElement> els = driver.FindElementsByClassName("android.widget.TextView");
@@ -77,7 +77,7 @@ namespace Appium.Samples.Android
             Assert.AreNotEqual(number1, els.Count);
         }
 
-        [Test ()]
+        [Test]
 		public void ComplexTouchActionTestCase ()
 		{
 			IList<AppiumWebElement> els = driver.FindElementsByClassName ("android.widget.TextView");
@@ -88,7 +88,7 @@ namespace Appium.Samples.Android
             Assert.AreNotEqual(loc2.Y, target.Location.Y);
 		}
 
-        [Test()]
+        [Test]
         public void SingleMultiActionTestCase()
         {
             IList<AppiumWebElement> els = driver.FindElementsByClassName("android.widget.TextView");
@@ -106,7 +106,7 @@ namespace Appium.Samples.Android
             Assert.AreNotEqual(loc2.Y, target.Location.Y);
         }
 
-        [Test()]
+        [Test]
         public void SequentalMultiActionTestCase()
         {
             string originalActivity = driver.CurrentActivity;

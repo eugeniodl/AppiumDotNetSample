@@ -41,7 +41,7 @@ namespace Appium.Samples.iOS
             }
         }
 
-        [Test()]
+        [Test]
         public void FindByAccessibilityIdTest()
         {
             By byAccessibilityId = new ByAccessibilityId("ComputeSumButton");

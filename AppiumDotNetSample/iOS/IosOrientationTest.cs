@@ -7,7 +7,7 @@ using System;
 
 namespace Appium.Samples.iOS
 {
- 	[TestFixture ()]
+ 	[TestFixture]
     public class iOSOrientationTest
 	{
 		private IWebDriver driver;
