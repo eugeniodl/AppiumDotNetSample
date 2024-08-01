@@ -24,7 +24,7 @@ namespace Appium.Samples.Android
 				capabilities.SetCapability("username", Env.getEnvVar("SAUCE_USERNAME")); 
 				capabilities.SetCapability("accessKey", Env.getEnvVar("SAUCE_ACCESS_KEY"));
 				capabilities.SetCapability("name", "android - webview");
-				capabilities.SetCapability("tags", new string[]{"sample"});
+				capabilities.SetCapability("tags", new[]{"sample"});
 			}
             capabilities.SetCapability(AndroidMobileCapabilityType.AppPackage, "io.selendroid.testapp");
             capabilities.SetCapability(AndroidMobileCapabilityType.AppActivity, ".WebViewActivity");
